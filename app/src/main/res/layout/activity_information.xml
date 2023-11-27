@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BecomeATutor.InformationActivity">
+
+    <TextView
+        android:id="@+id/textViewInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:text="Information"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewInformation"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Location:"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="250dp"
+        android:background="#C0C0C0"
+        android:drawablePadding="0dp"
+        android:hint="City"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLocation"
+        android:layout_marginStart="180dp"
+        android:layout_marginEnd="80dp"
+        android:background="#C0C0C0"
+        android:drawablePadding="0dp"
+        android:hint="State"
+        android:padding="5dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCity"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Distance you can travel to the student:"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDistance"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDistance"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Price of one tutoring session:"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPrice"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrice"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Available time for tutoring"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTime"
+        android:layout_marginTop="1dp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTime"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#0047AB"
+        android:text="Submit" />
+
+
+
+</RelativeLayout>

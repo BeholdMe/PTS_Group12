@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pts">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PTS">
+        <activity
+            android:name=".Payments.CreditCardPayments"
+            android:exported="false" />
+        <activity
+            android:name=".Payments.PaymentPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage.HomePageActivity"
+            android:exported="false"
+            android:label="Home" />
+        <activity
+            android:name=".LoginAndRegistration.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAndRegistration.RegisterActivity" />
+        <activity android:name=".LoginAndRegistration.ForgotPasswordActivity" />
+        <activity android:name=".TutoringCategories.ViewCategoryActivity" />
+        <activity android:name=".TutoringCategories.CreateCategoryActivity" />
+        <activity android:name=".BecomeATutor.BecomeATutorActivity" />
+        <activity android:name=".BecomeATutor.QualificationsActivity" />
+        <activity android:name=".BecomeATutor.InformationActivity" />
+        <activity android:name=".Search.SearchActivity" />
+    </application>
+
+</manifest>

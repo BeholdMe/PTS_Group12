@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutoringCategories.ViewCategoryActivity">
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCreateNewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCategory"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#0047AB"
+        android:text="Create new category" />
+
+    <ListView
+        android:id="@+id/listViewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnCreateNewCategory"
+        android:padding="16dp" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAndRegistration.RegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRegister"
+        android:layout_marginTop="1dp"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFirstName"
+        android:layout_marginTop="16dp"
+        android:hint="Last name" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLastName"
+        android:layout_marginTop="16dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:hint="Phone" />
+
+    <EditText
+        android:id="@+id/editTextNewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="16dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewUsername"
+        android:layout_marginTop="16dp"
+        android:hint="New Password" />
+
+    <EditText
+        android:id="@+id/editTextSecurity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNewPassword"
+        android:layout_marginTop="16dp"
+        android:hint="Security Quesetion: What city were you born in?" />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSecurity"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Register"
+        android:backgroundTint="#0047AB"/>
+
+</RelativeLayout>

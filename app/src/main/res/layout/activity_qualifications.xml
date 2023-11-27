@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BecomeATutor.QualificationsActivity">
+
+    <TextView
+        android:id="@+id/textViewQualifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:gravity="center"
+        android:text="Qualifications"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewQualification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQualifications"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Qualifications (Degree or other):"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextQualifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQualification"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/textViewWorkExperience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQualifications"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="Work Experience:"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextWorkExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewWorkExperience"
+        android:layout_marginTop="1dp" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextWorkExperience"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#0047AB"
+        android:text="Next>>" />
+
+
+
+</RelativeLayout>
